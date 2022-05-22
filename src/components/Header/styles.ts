@@ -22,7 +22,7 @@ export const DivButton = styled.div`
 	display: flex;
 	justify-content: space-around;
 	width: 300px;
-	@media (min-width: 0px) and (max-width: 767px) {
+	@media (min-width: 0px) and (max-width: 1023px) {
 		display: none;
 	}
 `
@@ -37,10 +37,14 @@ export const Li = styled.li`
 export const Ancora = styled.a`
 	text-decoration-line: none;
 	font-weight: bold;
+	color: #499995;
 	:hover {
 		text-decoration-line: underline;
 		text-decoration-color: #f1c50e;
 		text-underline-offset: 8px;
+	}
+	:active {
+		transform: scale(0.9);
 	}
 `
 export const DivMobile = styled.div`
@@ -49,7 +53,7 @@ export const DivMobile = styled.div`
 	justify-content: space-between;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
-	@media (min-width: 1280px) {
+	@media (min-width: 1024px) {
 		display: none;
 	} ;
 `
