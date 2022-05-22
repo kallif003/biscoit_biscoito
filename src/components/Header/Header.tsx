@@ -28,16 +28,28 @@ const Header: NextPage = () => {
 	}
 
 	return (
-		<Container className={active ? "bg-[#5f9ea0]" : "bg-pink h-full"}>
-			<Menu className={active ? "bg-[#5f9ea0]" : "bg-pink"}>
+		<Container className={active ? "" : "bg-lightPink h-full"}>
+			<Menu>
 				<div className="sm:hidden pl-2">
 					<Image src={biscuit} alt="biscuit" width={50} height={40} />
 				</div>
 
-				<DivButton className="hover:text-[#3d3d3f]">
-					<Ancora href="#aboutMe">Home</Ancora>
-					<Ancora href="#aboutMe">Sobre</Ancora>
-					<Ancora href="#aboutMe">Produtos</Ancora>
+				<DivButton className="text-[1.2rem]">
+					<Ancora
+						href="#aboutMe"
+						className="hover:underline decoration-yellow underline-offset-8">
+						Home
+					</Ancora>
+					<Ancora
+						href="#aboutMe"
+						className="hover:underline decoration-yellow underline-offset-8">
+						Sobre
+					</Ancora>
+					<Ancora
+						href="#aboutMe"
+						className="hover:underline decoration-yellow underline-offset-8">
+						Produtos
+					</Ancora>
 				</DivButton>
 
 				<SocialMedia>
@@ -46,18 +58,21 @@ const Header: NextPage = () => {
 						title="User Profile"
 						size={1.2}
 						color="#F1C50E"
+						className="active:scale-90"
 					/>
 					<Icon
 						path={mdiInstagram}
 						title="User Profile"
 						size={1.2}
 						color="#F1C50E"
+						className="active:scale-90"
 					/>
 					<Icon
 						path={mdiWhatsapp}
 						title="User Profile"
 						size={1.2}
 						color="#F1C50E"
+						className="active:scale-90"
 					/>
 				</SocialMedia>
 				<DivMobile onClick={troca}>
@@ -76,30 +91,27 @@ const Header: NextPage = () => {
 					/>
 				</DivMobile>
 			</Menu>
-			<nav className={active ? "hidden" : "block"}>
+			<nav className={active ? "hidden" : "block text-[25px]"}>
 				<Ul>
 					<Li className={LiMobile} id="style-li">
-						<Ancora href={"/"} className="hover:text-white">
+						<Ancora
+							href={"/"}
+							className="hover:text-yellow bg-white rounded-lg px-10 ">
 							Home
 						</Ancora>
 					</Li>
 					<Li className={LiMobile} id="style-li">
-						<Ancora href={"/"} className="hover:text-white">
+						<Ancora
+							href={"/"}
+							className="hover:text-yellow bg-white rounded-lg px-7">
 							Projetos
 						</Ancora>
 					</Li>
 					<Li className={LiMobile} id="style-li">
-						<Ancora href={"/"} className="hover:text-white">
-							Sobre
-						</Ancora>
-					</Li>
-
-					<Li className={LiMobile} id="style-li">
 						<Ancora
-							href="https://api.whatsapp.com/send?l=pt_pt&phone=5512991116524"
-							target="_blank"
-							className="hover:text-white">
-							Contate-me
+							href={"/"}
+							className="hover:text-yellow bg-white rounded-lg px-10">
+							Sobre
 						</Ancora>
 					</Li>
 				</Ul>
