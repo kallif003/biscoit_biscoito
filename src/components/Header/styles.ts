@@ -37,12 +37,8 @@ export const Li = styled.li`
 export const Ancora = styled.a`
 	text-decoration-line: none;
 	font-weight: bold;
-	color: #499995;
-	:hover {
-		text-decoration-line: underline;
-		text-decoration-color: #f1c50e;
-		text-underline-offset: 8px;
-	}
+	color: #9a9a9a;
+
 	:active {
 		transform: scale(0.9);
 	}

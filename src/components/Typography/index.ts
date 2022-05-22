@@ -5,6 +5,7 @@ export const Title = styled.h1`
 	font-size: 4rem;
 	margin: 0;
 	font-weight: bold;
+	text-align: center;
 	span {
 		color: #f1c50e;
 		font-size: 4rem;
@@ -26,7 +27,7 @@ export const Subtitle = styled.h3`
 	font-size: 2rem;
 	margin: 0;
 	text-align: start;
-	color: #499995;
+	color: #ebcd50;
 
 	font-weight: bold;
 	@media (min-width: 0px) and (max-width: 767px) {

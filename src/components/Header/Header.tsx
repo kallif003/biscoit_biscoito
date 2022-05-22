@@ -34,10 +34,22 @@ const Header: NextPage = () => {
 					<Image src={biscuit} alt="biscuit" width={50} height={40} />
 				</div>
 
-				<DivButton className="">
-					<Ancora href="#aboutMe">Home</Ancora>
-					<Ancora href="#aboutMe">Sobre</Ancora>
-					<Ancora href="#aboutMe">Produtos</Ancora>
+				<DivButton className="text-[1.2rem]">
+					<Ancora
+						href="#aboutMe"
+						className="hover:underline decoration-yellow underline-offset-8">
+						Home
+					</Ancora>
+					<Ancora
+						href="#aboutMe"
+						className="hover:underline decoration-yellow underline-offset-8">
+						Sobre
+					</Ancora>
+					<Ancora
+						href="#aboutMe"
+						className="hover:underline decoration-yellow underline-offset-8">
+						Produtos
+					</Ancora>
 				</DivButton>
 
 				<SocialMedia>
@@ -82,17 +94,23 @@ const Header: NextPage = () => {
 			<nav className={active ? "hidden" : "block text-[25px]"}>
 				<Ul>
 					<Li className={LiMobile} id="style-li">
-						<Ancora href={"/"} className="hover:text-white">
+						<Ancora
+							href={"/"}
+							className="hover:text-yellow bg-white rounded-lg px-10 ">
 							Home
 						</Ancora>
 					</Li>
 					<Li className={LiMobile} id="style-li">
-						<Ancora href={"/"} className="hover:text-white">
+						<Ancora
+							href={"/"}
+							className="hover:text-yellow bg-white rounded-lg px-7">
 							Projetos
 						</Ancora>
 					</Li>
 					<Li className={LiMobile} id="style-li">
-						<Ancora href={"/"} className="hover:text-white">
+						<Ancora
+							href={"/"}
+							className="hover:text-yellow bg-white rounded-lg px-10">
 							Sobre
 						</Ancora>
 					</Li>

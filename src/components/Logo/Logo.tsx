@@ -12,7 +12,9 @@ const Logo: NextPage = () => {
 				<Title>
 					BISCUIT<span>&</span>BISCOITO
 				</Title>
-				<Subtitle>DOCES E ARTESANATO</Subtitle>
+				<div className="bg-white rounded-lg w-[24rem] px-2 sm:mt-0 mt-1">
+					<Subtitle>DOCES E ARTESANATO</Subtitle>
+				</div>
 			</DivTextLogo>
 			<div className="sm:hidden md:hidden pl-2">
 				<Image src={bolo} alt="biscuit" width={500} height={324} />
