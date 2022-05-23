@@ -9,10 +9,10 @@ const Logo: NextPage = () => {
 	return (
 		<ContainerLogo>
 			<DivTextLogo>
-				<Title>
+				<Title className="text-[#fff]">
 					BISCUIT<span>&</span>BISCOITO
 				</Title>
-				<div className="bg-white rounded-lg w-[24rem] px-2 sm:mt-0 mt-1">
+				<div className="bg-white rounded-lg w-[24rem] sm:w-[17rem] sm:ml-4 px-2 sm:mt-0 mt-1">
 					<Subtitle>DOCES E ARTESANATO</Subtitle>
 				</div>
 			</DivTextLogo>
