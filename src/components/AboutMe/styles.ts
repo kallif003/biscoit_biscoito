@@ -4,11 +4,9 @@ export const ContainerAboutMe = styled.div`
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	width: 50rem;
-	background: #fdf3f3;
+	background: #ddf3fa;
 	border-radius: 0.5rem;
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
+	margin-top: 5rem;
 	@media (min-width: 300px) and (max-width: 767px) {
 		width: 20rem;
 		flex-direction: column;
@@ -18,7 +16,7 @@ export const DivImage = styled.div`
 	border-radius: 0.5rem;
 	width: 25rem;
 	background-image: url("https://user-images.githubusercontent.com/66094168/169720541-1aa3edd4-82e9-4488-949b-e771a974739a.png");
-	background-size: cover;
+
 	background-position: center;
 	@media (min-width: 300px) and (max-width: 767px) {
 		width: 20rem;
@@ -34,14 +32,14 @@ export const Divtext = styled.div`
 	}
 `
 export const DivHorizontal = styled.div`
-	background: linear-gradient(to top, #fff 10%, transparent 20%);
+	background: linear-gradient(to top, #ddf3fa 10%, transparent 20%);
 	height: 35rem;
 	@media (min-width: 300px) and (max-width: 767px) {
-		background: linear-gradient(to top, #fdf3f3 10%, transparent 20%);
+		background: linear-gradient(to top, #ddf3fa 10%, transparent 20%);
 	}
 `
 export const DivVerticalLeft = styled.div`
-	background: linear-gradient(to left, #fdf3f3 2%, transparent 22%);
+	background: linear-gradient(to left, #ddf3fa 2%, transparent 22%);
 	height: 30rem;
 `
 export const DivVerticalRight = styled.div`

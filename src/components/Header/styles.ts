@@ -22,6 +22,7 @@ export const DivButton = styled.div`
 	display: flex;
 	justify-content: space-around;
 	width: 300px;
+	padding-left: 1.5rem;
 	@media (min-width: 0px) and (max-width: 1023px) {
 		display: none;
 	}
