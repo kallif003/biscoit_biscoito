@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Title = styled.h1`
-	color: #fff;
 	font-size: 4rem;
 	margin: 0;
 	font-weight: bold;
@@ -38,4 +37,16 @@ export const Subtitle = styled.h3`
 		font-size: 2rem;
 		text-align: center;
 	}
+`
+export const TitleAboutMe = styled.h1`
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-right: 1.25rem;
+	color: #f1c50e;
+`
+export const Content = styled.p`
+	overflow-wrap: break-word;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #3d3d3d;
 `
