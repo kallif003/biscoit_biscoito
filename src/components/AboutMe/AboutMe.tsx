@@ -12,7 +12,7 @@ import { TitleAboutMe, Content } from "../Typography"
 
 const AboutMe: NextPage = () => {
 	return (
-		<div className="flex justify-center items-center mb-20">
+		<div className="flex justify-center items-center mb-20 ">
 			<ContainerAboutMe>
 				<DivImage>
 					<DivHorizontal>

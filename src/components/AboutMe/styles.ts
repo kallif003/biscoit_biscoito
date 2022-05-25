@@ -6,10 +6,14 @@ export const ContainerAboutMe = styled.div`
 	align-items: center;
 	background: #ddf3fa;
 	border-radius: 0.5rem;
-	margin-top: 5rem;
+	margin-top: 1rem;
 	@media (min-width: 300px) and (max-width: 767px) {
 		width: 20rem;
 		flex-direction: column;
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 45rem;
+		flex-direction: row;
 	}
 `
 export const DivImage = styled.div`
@@ -28,7 +32,7 @@ export const Divtext = styled.div`
 	flex-direction: column;
 	padding: 0 2rem;
 	@media (min-width: 300px) and (max-width: 767px) {
-		width: 20rem;
+		width: auto;
 	}
 `
 export const DivHorizontal = styled.div`

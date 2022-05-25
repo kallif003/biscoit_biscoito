@@ -1,5 +1,4 @@
 export {
-	ContainerMyWorks,
 	DivMyWorks,
 	DivButtonsMyWorks,
 	ButtonsMyWorks,

@@ -10,9 +10,9 @@ export const Title = styled.h1`
 		font-size: 4rem;
 	}
 	@media (min-width: 0px) and (max-width: 767px) {
-		font-size: 2rem;
+		font-size: 200%;
 		span {
-			font-size: 2rem;
+			font-size: 150%;
 		}
 	}
 	@media (min-width: 1024px) and (max-width: 1279px) {
@@ -30,7 +30,7 @@ export const Subtitle = styled.h3`
 
 	font-weight: bold;
 	@media (min-width: 0px) and (max-width: 767px) {
-		font-size: 1.2rem;
+		font-size: 150%;
 		text-align: center;
 	}
 	@media (min-width: 768px) and (max-width: 1023px) {
