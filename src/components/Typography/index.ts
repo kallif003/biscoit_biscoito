@@ -50,3 +50,21 @@ export const Content = styled.p`
 	font-weight: 600;
 	color: #3d3d3d;
 `
+
+export const TitleContact = styled.h1`
+	color: #72efe9;
+	font-size: 2rem;
+	font-weight: bold;
+
+	@media (min-width: 0) and (max-width: 768px) {
+		font-size: 100%;
+	}
+`
+export const TextContact = styled.p`
+	overflow-wrap: break-word;
+
+	font-weight: 600;
+	@media (min-width: 0) and (max-width: 768px) {
+		font-size: 50%;
+	}
+`
