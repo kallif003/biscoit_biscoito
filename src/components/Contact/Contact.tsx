@@ -39,21 +39,14 @@ const Contact: NextPage = () => {
 							className="active:scale-90 hover:text-[#e98f93]"
 						/>
 					</ContainerIcon>
+
 					<TitleContact>Encomendas e Orçamentos</TitleContact>
-					<TextContact>Faca o seu :)</TextContact>
 				</Cloud>
 			</ContainerCloud>
-			<div className="flex flex-row justify-center items-center">
-				<ContainerRain>
-					<Rain seg={"9.84s"}></Rain>
-				</ContainerRain>
-				<ContainerRain>
-					<Rain seg={"9.85s"}></Rain>
-				</ContainerRain>
-				<ContainerRain>
-					<Rain seg={"9.86s"}></Rain>
-				</ContainerRain>
-			</div>
+
+			<ContainerRain>
+				<Rain></Rain>
+			</ContainerRain>
 		</ContainerContact>
 	)
 }
