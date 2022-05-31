@@ -90,4 +90,5 @@ export const DivTitleMyWorks = styled.div`
 	font-weight: 700;
 	border-color: #cacaca;
 	border-width: 1px;
+	color: #9a9a9a;
 `

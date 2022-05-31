@@ -7,7 +7,7 @@ export const ContainerContact = styled.div`
 	align-items: center;
 	position: relative;
 `
-export const Rain = styled.div.attrs((props: { seg: string }) => props)`
+export const Rain = styled.div`
 	background-image: url("https://user-images.githubusercontent.com/66094168/170534481-c9956417-2d76-4969-9eb2-088ee570e5d5.png");
 	background-repeat: repeat-y;
 	background-size: cover;
@@ -16,7 +16,7 @@ export const Rain = styled.div.attrs((props: { seg: string }) => props)`
 	top: 20rem;
 	left: 0;
 	width: 100%;
-	animation: snow ${(props) => props.seg} linear infinite;
+	animation: snow 12s linear infinite;
 	@keyframes snow {
 		/*Primeiro a posição zero da imagem.*/
 		0% {
@@ -28,7 +28,7 @@ export const Rain = styled.div.attrs((props: { seg: string }) => props)`
 		}
 	}
 	@media (min-width: 0) and (max-width: 768px) {
-		height: 11.25rem;
+		height: 10rem;
 		top: 10rem;
 	}
 	@media (min-width: 769px) and (max-width: 1023px) {
@@ -56,10 +56,9 @@ export const Cloud = styled.div`
 export const ContainerCloud = styled.div`
 	width: 50rem;
 	position: absolute;
-
 	top: 0px;
 	@media (min-width: 0px) and (max-width: 767px) {
-		width: 23rem;
+		width: 22rem;
 	}
 	@media (min-width: 769px) and (max-width: 1023px) {
 		width: 45.8rem;
@@ -75,14 +74,15 @@ export const ContainerIcon = styled.div`
 	}
 `
 export const ContainerRain = styled.div`
-	width: 10rem;
+	width: 48rem;
 	position: relative;
 	z-index: -10;
+	margin-left: 5rem;
 	@media (min-width: 0px) and (max-width: 767px) {
-		width: 5.89rem /* 240px */;
+		width: 15.5rem;
 		margin-left: 0;
 	}
 	@media (min-width: 769px) and (max-width: 1023px) {
-		width: 8.8rem;
+		width: 40.8rem;
 	}
 `

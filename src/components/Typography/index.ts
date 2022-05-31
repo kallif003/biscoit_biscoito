@@ -55,14 +55,14 @@ export const TitleContact = styled.h1`
 	color: #9a9a9a;
 	font-size: 2rem;
 	font-weight: bold;
-
 	@media (min-width: 0) and (max-width: 768px) {
 		font-size: 100%;
+		margin-top: -8px;
 	}
 `
 export const TextContact = styled.p`
 	overflow-wrap: break-word;
-
+	margin-top: 2px;
 	font-weight: 600;
 	@media (min-width: 0) and (max-width: 768px) {
 		font-size: 50%;
