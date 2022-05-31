@@ -40,15 +40,20 @@ const Contact: NextPage = () => {
 						/>
 					</ContainerIcon>
 					<TitleContact>Encomendas e Orçamentos</TitleContact>
-					<TextContact>
-						Entre em contato através das minhas redes sociais,
-					</TextContact>
-					<TextContact>estou pronta para te atender</TextContact>
+					<TextContact>Faca o seu :)</TextContact>
 				</Cloud>
 			</ContainerCloud>
-			<ContainerRain>
-				<Rain></Rain>
-			</ContainerRain>
+			<div className="flex flex-row justify-center items-center">
+				<ContainerRain>
+					<Rain seg={"9.84s"}></Rain>
+				</ContainerRain>
+				<ContainerRain>
+					<Rain seg={"9.85s"}></Rain>
+				</ContainerRain>
+				<ContainerRain>
+					<Rain seg={"9.86s"}></Rain>
+				</ContainerRain>
+			</div>
 		</ContainerContact>
 	)
 }

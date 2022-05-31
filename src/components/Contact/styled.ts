@@ -7,7 +7,7 @@ export const ContainerContact = styled.div`
 	align-items: center;
 	position: relative;
 `
-export const Rain = styled.div`
+export const Rain = styled.div.attrs((props: { seg: string }) => props)`
 	background-image: url("https://user-images.githubusercontent.com/66094168/170534481-c9956417-2d76-4969-9eb2-088ee570e5d5.png");
 	background-repeat: repeat-y;
 	background-size: cover;
@@ -16,7 +16,7 @@ export const Rain = styled.div`
 	top: 20rem;
 	left: 0;
 	width: 100%;
-	animation: snow 10s linear infinite;
+	animation: snow ${(props) => props.seg} linear infinite;
 	@keyframes snow {
 		/*Primeiro a posição zero da imagem.*/
 		0% {
@@ -75,15 +75,14 @@ export const ContainerIcon = styled.div`
 	}
 `
 export const ContainerRain = styled.div`
-	width: 45rem;
+	width: 10rem;
 	position: relative;
 	z-index: -10;
-	margin-left: 7rem;
 	@media (min-width: 0px) and (max-width: 767px) {
-		width: 15rem /* 240px */;
+		width: 5.89rem /* 240px */;
 		margin-left: 0;
 	}
 	@media (min-width: 769px) and (max-width: 1023px) {
-		width: 30.8rem;
+		width: 8.8rem;
 	}
 `
