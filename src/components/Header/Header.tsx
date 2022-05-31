@@ -28,7 +28,7 @@ const Header: NextPage = () => {
 	}
 
 	return (
-		<Container className={active ? "" : "bg-lightPink h-full"}>
+		<Container className={active ? "" : "bg-lightPink h-full absolute z-10"}>
 			<Menu>
 				<div className="sm:hidden pl-2">
 					<Image src={biscuit} alt="biscuit" width={50} height={40} />
@@ -91,7 +91,7 @@ const Header: NextPage = () => {
 					/>
 				</DivMobile>
 			</Menu>
-			<nav className={active ? "hidden" : "block text-[25px]"}>
+			<nav className={active ? "hidden" : "block text-[25px] "}>
 				<Ul>
 					<Li className={LiMobile} id="style-li">
 						<Ancora

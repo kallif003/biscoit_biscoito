@@ -4,6 +4,7 @@ export const ContainerLogo = styled.div`
 	width: 100vw;
 	height: 30rem;
 	background-image: url("https://user-images.githubusercontent.com/66094168/169713572-527a79f6-0d70-42d8-a367-221fe5aea194.png");
+	background-size: cover;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;

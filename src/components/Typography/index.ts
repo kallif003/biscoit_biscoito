@@ -48,5 +48,23 @@ export const Content = styled.p`
 	overflow-wrap: break-word;
 	font-size: 1.5rem;
 	font-weight: 600;
-	color: #3d3d3d;
+	color: #9a9a9a;
+`
+
+export const TitleContact = styled.h1`
+	color: #9a9a9a;
+	font-size: 2rem;
+	font-weight: bold;
+
+	@media (min-width: 0) and (max-width: 768px) {
+		font-size: 100%;
+	}
+`
+export const TextContact = styled.p`
+	overflow-wrap: break-word;
+
+	font-weight: 600;
+	@media (min-width: 0) and (max-width: 768px) {
+		font-size: 50%;
+	}
 `

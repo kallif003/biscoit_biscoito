@@ -4,6 +4,7 @@ import Header from "../components/Header/Header"
 import Logo from "../components/Logo/Logo"
 import AboutMe from "../components/AboutMe/AboutMe"
 import MyWorks from "../components/MyWorks/MyWorks"
+import Contact from "../components/Contact/Contact"
 
 const Home: NextPage = () => {
 	return (
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
 				Conheça meu trabalho
 			</h1>
 			<MyWorks />
+			<Contact />
 		</div>
 	)
 }
