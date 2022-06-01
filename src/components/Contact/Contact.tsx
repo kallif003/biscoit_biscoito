@@ -8,7 +8,7 @@ import {
 	ContainerIcon,
 	ContainerRain,
 } from "."
-import { TitleContact, TextContact } from "../Typography"
+import { TitleContact } from "../Typography"
 import Icon from "@mdi/react"
 import { mdiFacebook } from "@mdi/js"
 import { mdiInstagram } from "@mdi/js"

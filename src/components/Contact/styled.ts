@@ -6,6 +6,13 @@ export const ContainerContact = styled.div`
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	margin-right: 5rem;
+	@media (min-width: 0) and (max-width: 768px) {
+		margin-right: 2rem;
+	}
+	@media (min-width: 769px) and (max-width: 1023px) {
+		margin-right: 2rem;
+	}
 `
 export const Rain = styled.div`
 	background-image: url("https://user-images.githubusercontent.com/66094168/170534481-c9956417-2d76-4969-9eb2-088ee570e5d5.png");

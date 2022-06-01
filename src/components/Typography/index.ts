@@ -1,5 +1,6 @@
 import styled from "styled-components"
 
+// logo component
 export const Title = styled.h1`
 	font-size: 4rem;
 	margin: 0;
@@ -38,6 +39,7 @@ export const Subtitle = styled.h3`
 		text-align: center;
 	}
 `
+// About me component
 export const TitleAboutMe = styled.h1`
 	font-size: 2.5rem;
 	font-weight: bold;
@@ -51,6 +53,7 @@ export const Content = styled.p`
 	color: #9a9a9a;
 `
 
+// Contact component
 export const TitleContact = styled.h1`
 	color: #9a9a9a;
 	font-size: 2rem;
@@ -67,4 +70,19 @@ export const TextContact = styled.p`
 	@media (min-width: 0) and (max-width: 768px) {
 		font-size: 50%;
 	}
+`
+// Praise component
+export const Text = styled.h1`
+	color: #f1c50e;
+	font-size: 10rem;
+`
+export const Name = styled.h1`
+	color: #7a7a7a;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-top: -1rem;
+`
+export const Comment = styled.p`
+	overflow-wrap: break-word;
+	color: #9a9a9a;
 `

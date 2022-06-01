@@ -5,6 +5,7 @@ import Logo from "../components/Logo/Logo"
 import AboutMe from "../components/AboutMe/AboutMe"
 import MyWorks from "../components/MyWorks/MyWorks"
 import Contact from "../components/Contact/Contact"
+import Praise from "../components/Praise/Praise"
 
 const Home: NextPage = () => {
 	return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 				Conheça meu trabalho
 			</h1>
 			<MyWorks />
+			<Praise />
 			<Contact />
 		</div>
 	)
