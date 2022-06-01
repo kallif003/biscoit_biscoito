@@ -4,7 +4,6 @@ export {
 	DivButton,
 	SocialMedia,
 	Li,
-	Ancora,
 	DivMobile,
 	Ul,
 	LiMobile,

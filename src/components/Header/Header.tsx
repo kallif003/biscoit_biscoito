@@ -8,9 +8,9 @@ import {
 	DivMobile,
 	Ul,
 	Li,
-	Ancora,
 	LiMobile,
 } from "."
+import { Ancora } from "../Buttons"
 import Icon from "@mdi/react"
 import { mdiFacebook } from "@mdi/js"
 import { mdiInstagram } from "@mdi/js"

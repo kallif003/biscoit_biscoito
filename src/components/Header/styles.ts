@@ -35,15 +35,7 @@ export const SocialMedia = styled.div`
 export const Li = styled.li`
 	padding-left: 0.75rem;
 `
-export const Ancora = styled.a`
-	text-decoration-line: none;
-	font-weight: bold;
-	color: #9a9a9a;
 
-	:active {
-		transform: scale(0.9);
-	}
-`
 export const DivMobile = styled.div`
 	display: flex;
 	flex-direction: column;
