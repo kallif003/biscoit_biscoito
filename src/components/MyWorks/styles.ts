@@ -21,31 +21,7 @@ export const DivButtonsMyWorks = styled.div`
 		margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 	}
 `
-export const ButtonsMyWorks = styled.button`
-	background: #fff;
-	border-color: #ddd;
-	border-width: 1px;
-	width: 8rem;
-	height: 4rem;
-	margin-bottom: 1.25rem;
-	border-radius: 0.375rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #cacaca;
-	:hover {
-		background: #ebcd50;
-		color: #fff;
-		border-color: #fff;
-		border-width: 1px;
-	}
-	:active {
-		transform: scale(0.9);
-	}
-	@media (min-width: 0px) and (max-width: 767px) {
-		width: 5rem;
-	}
-`
+
 export const GridMyWorks = styled.ul`
 	list-style: none;
 	display: grid;

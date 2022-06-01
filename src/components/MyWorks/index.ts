@@ -1,7 +1,6 @@
 export {
 	DivMyWorks,
 	DivButtonsMyWorks,
-	ButtonsMyWorks,
 	GridMyWorks,
 	DivImgMyWorks,
 	DivTitleMyWorks,

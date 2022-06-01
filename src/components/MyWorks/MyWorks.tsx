@@ -6,10 +6,10 @@ import Image from "next/image"
 import { mdiCakeVariantOutline } from "@mdi/js"
 import { mdiPaletteOutline } from "@mdi/js"
 import { mdiCookieOutline } from "@mdi/js"
+import { ButtonsMyWorks } from "../Buttons"
 import {
 	DivMyWorks,
 	DivButtonsMyWorks,
-	ButtonsMyWorks,
 	GridMyWorks,
 	DivImgMyWorks,
 	DivTitleMyWorks,
