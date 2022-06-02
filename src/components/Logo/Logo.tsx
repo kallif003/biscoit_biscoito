@@ -1,6 +1,6 @@
 import React from "react"
 import { NextPage } from "next"
-import { ContainerLogo, DivTextLogo, DivSubtitle } from "./style"
+import { ContainerLogo, DivTextLogo, DivSubtitle } from "./styles"
 import { Title, Subtitle } from "../Typography"
 import Image from "next/image"
 import bolo from "../../assets/bolo.png"

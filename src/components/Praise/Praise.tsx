@@ -2,7 +2,9 @@ import React from "react"
 import { NextPage } from "next"
 import Image from "next/image"
 import me from "../../assets/me.png"
-import { Text, Name, Comment } from "../Typography"
+import { Name, Comment } from "../Typography"
+import Icon from "@mdi/react"
+import { mdiFormatQuoteClose } from "@mdi/js"
 import {
 	ContainerPraise,
 	CardPraise,
@@ -16,7 +18,13 @@ const Praise: NextPage = () => {
 		<ContainerPraise>
 			<CardPraise>
 				<ContainerImg>
-					<Text>{`"`}</Text>
+					<Icon
+						path={mdiFormatQuoteClose}
+						title="User Profile"
+						size={3}
+						className="mt-[-5rem]"
+						color={"#F1C50E"}
+					/>
 					<DivImgPraise>
 						<Image src={me} alt="biscuit" width={72} height={75} />
 					</DivImgPraise>
@@ -30,7 +38,13 @@ const Praise: NextPage = () => {
 			</CardPraise>
 			<CardPraise>
 				<ContainerImg>
-					<Text>{`"`}</Text>
+					<Icon
+						path={mdiFormatQuoteClose}
+						title="User Profile"
+						size={3}
+						className="mt-[-5rem]"
+						color={"#F1C50E"}
+					/>
 					<DivImgPraise>
 						<Image src={me} alt="biscuit" width={72} height={75} />
 					</DivImgPraise>
@@ -44,7 +58,13 @@ const Praise: NextPage = () => {
 			</CardPraise>
 			<CardPraise>
 				<ContainerImg>
-					<Text>{`"`}</Text>
+					<Icon
+						path={mdiFormatQuoteClose}
+						title="User Profile"
+						size={3}
+						className="mt-[-5rem]"
+						color={"#F1C50E"}
+					/>
 					<DivImgPraise>
 						<Image src={me} alt="biscuit" width={72} height={75} />
 					</DivImgPraise>
