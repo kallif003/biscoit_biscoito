@@ -4,4 +4,4 @@ export {
 	DivImgPraise,
 	ContainerImg,
 	ContainerText,
-} from "./styled"
+} from "./styles"

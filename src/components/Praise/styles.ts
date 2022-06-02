@@ -5,7 +5,7 @@ export const ContainerPraise = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin-right: 3rem;
-	@media (min-width: 0px) and (max-width: 768px) {
+	@media (min-width: 0px) and (max-width: 767px) {
 		flex-direction: column;
 		margin-right: 1.1rem;
 	}
@@ -23,11 +23,11 @@ export const CardPraise = styled.div`
 	border-radius: 0.5rem;
 	padding-block: 1rem;
 	margin-left: 1rem;
-	@media (min-width: 0px) and (max-width: 768px) {
+	@media (min-width: 0px) and (max-width: 767px) {
 		width: 15rem;
 		margin-bottom: 1rem;
 	}
-	@media (min-width: 769px) and (max-width: 1023px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 13.9rem;
 	}
 `
@@ -54,10 +54,10 @@ export const ContainerImg = styled.div`
 export const ContainerText = styled.div`
 	width: 15rem;
 	text-align: center;
-	@media (min-width: 0px) and (max-width: 768px) {
+	@media (min-width: 0px) and (max-width: 767px) {
 		width: 10rem;
 	}
-	@media (min-width: 769px) and (max-width: 1023px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 12rem;
 	}
 `

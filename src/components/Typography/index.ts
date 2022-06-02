@@ -72,10 +72,7 @@ export const TextContact = styled.p`
 	}
 `
 // Praise component
-export const Text = styled.h1`
-	color: #f1c50e;
-	font-size: 10rem;
-`
+
 export const Name = styled.h1`
 	color: #7a7a7a;
 	font-weight: bold;

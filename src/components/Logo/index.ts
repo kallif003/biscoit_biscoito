@@ -1,1 +1,1 @@
-export { ContainerLogo, DivTextLogo, DivSubtitle } from "./style"
+export { ContainerLogo, DivTextLogo, DivSubtitle } from "./styles"

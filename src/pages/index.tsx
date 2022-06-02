@@ -4,7 +4,7 @@ import Header from "../components/Header/Header"
 import Logo from "../components/Logo/Logo"
 import AboutMe from "../components/AboutMe/AboutMe"
 import MyWorks from "../components/MyWorks/MyWorks"
-import Contact from "../components/Contact/Contact"
+import Footer from "../components/Footer/Footer"
 import Praise from "../components/Praise/Praise"
 
 const Home: NextPage = () => {
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 			</h1>
 			<MyWorks />
 			<Praise />
-			<Contact />
+			<Footer />
 		</div>
 	)
 }

@@ -7,10 +7,10 @@ export const ContainerContact = styled.div`
 	align-items: center;
 	position: relative;
 	margin-right: 5rem;
-	@media (min-width: 0) and (max-width: 768px) {
+	@media (min-width: 0) and (max-width: 767px) {
 		margin-right: 2rem;
 	}
-	@media (min-width: 769px) and (max-width: 1023px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		margin-right: 2rem;
 	}
 `
@@ -34,11 +34,11 @@ export const Rain = styled.div`
 			background-position: center 1000px;
 		}
 	}
-	@media (min-width: 0) and (max-width: 768px) {
+	@media (min-width: 0) and (max-width: 767px) {
 		height: 10rem;
 		top: 10rem;
 	}
-	@media (min-width: 769px) and (max-width: 1023px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		height: 12.8rem;
 	}
 `
@@ -52,11 +52,11 @@ export const Cloud = styled.div`
 	align-items: center;
 	color: #fff;
 	padding: 2rem 0 0 4rem;
-	@media (min-width: 0px) and (max-width: 768px) {
+	@media (min-width: 0px) and (max-width: 767px) {
 		height: 13.8rem;
 		padding: 2rem 0 0 2rem;
 	}
-	@media (min-width: 769px) and (max-width: 1023px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		height: 30.8rem;
 	}
 `
@@ -67,7 +67,7 @@ export const ContainerCloud = styled.div`
 	@media (min-width: 0px) and (max-width: 767px) {
 		width: 22rem;
 	}
-	@media (min-width: 769px) and (max-width: 1023px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 45.8rem;
 	}
 `
@@ -89,7 +89,7 @@ export const ContainerRain = styled.div`
 		width: 15.5rem;
 		margin-left: 0;
 	}
-	@media (min-width: 769px) and (max-width: 1023px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 40.8rem;
 	}
 `

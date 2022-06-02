@@ -14,6 +14,7 @@ export const Menu = styled.div`
 	padding: 0 3rem 0 1rem;
 	background-image: url("https://user-images.githubusercontent.com/66094168/169591915-3f43563d-ee80-48bf-ac95-c9107bd87356.png");
 	background-repeat: no-repeat;
+	background-size: cover;
 	@media (min-width: 300px) and (max-width: 767px) {
 		padding: 0 0.5rem 0 1rem;
 	}
