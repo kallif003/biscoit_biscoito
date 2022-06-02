@@ -1,0 +1,25 @@
+{
+  "_cts": {
+    "about-me": {},
+    "my-work": {},
+    "my-cakes": {
+      "description": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    },
+    "my-art": {},
+    "my-biscuit": {},
+    "my-info": {},
+    "my-praises": {
+      "content": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    }
+  }
+}

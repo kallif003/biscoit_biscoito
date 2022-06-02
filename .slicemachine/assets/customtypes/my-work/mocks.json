@@ -1,0 +1,18 @@
+{
+  "id": "3568dec0-fd42-42e2-a753-ccb39c98c8b1",
+  "uid": "inventore-dicta-ipsum",
+  "type": "my-work",
+  "data": {
+    "myWorkTitle": "revolutionize synergistic blockchains",
+    "myWorkDescription": "repurpose magnetic e-services",
+    "myWorkImg": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+    }
+  }
+}

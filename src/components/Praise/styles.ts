@@ -18,11 +18,11 @@ export const CardPraise = styled.div`
 	width: 17rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	border-radius: 0.5rem;
 	padding-block: 1rem;
 	margin-left: 1rem;
+	height: 25rem;
 	@media (min-width: 0px) and (max-width: 767px) {
 		width: 15rem;
 		margin-bottom: 1rem;
@@ -32,8 +32,10 @@ export const CardPraise = styled.div`
 	}
 `
 
-export const DivImgPraise = styled.div`
-	background: #f1c50e;
+export const DivImgPraise = styled.div.attrs(
+	(props: { color: string }) => props
+)`
+	background: ${(props) => props.color};
 	border-radius: 0.5rem;
 	width: 5.2rem;
 	height: 5rem;

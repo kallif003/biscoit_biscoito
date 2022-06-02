@@ -1,0 +1,31 @@
+{
+  "id": "my-info",
+  "label": "My Info",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "time": {
+        "type": "Text",
+        "config": {
+          "label": "Time",
+          "placeholder": ""
+        }
+      },
+      "phone": {
+        "type": "Text",
+        "config": {
+          "label": "Phone",
+          "placeholder": ""
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

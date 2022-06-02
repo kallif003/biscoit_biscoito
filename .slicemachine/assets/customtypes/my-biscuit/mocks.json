@@ -1,0 +1,19 @@
+{
+  "id": "c753d83e-982f-40b4-9e71-40c0ffb92300",
+  "uid": "recusandae-ipsa-dolor",
+  "type": "my-biscuit",
+  "data": {
+    "title": "grow out-of-the-box relationships",
+    "description": "unleash e-business action-items",
+    "color": "#32f94e",
+    "img": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+    }
+  }
+}
