@@ -1,0 +1,46 @@
+{
+  "id": "my-biscuit",
+  "label": "My Biscuit",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": ""
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "color": {
+        "type": "Color",
+        "config": {
+          "label": "Color",
+          "placeholder": ""
+        }
+      },
+      "img": {
+        "type": "Image",
+        "config": {
+          "label": "Img",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

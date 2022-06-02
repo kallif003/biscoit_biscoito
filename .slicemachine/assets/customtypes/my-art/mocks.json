@@ -1,0 +1,19 @@
+{
+  "id": "d86c2732-6afb-4d20-9a7c-4f0fd26ba7da",
+  "uid": "ea-itaque-eos",
+  "type": "my-art",
+  "data": {
+    "title": "incentivize innovative web-readiness",
+    "description": "streamline efficient applications",
+    "color": "#f3d03b",
+    "img": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+    }
+  }
+}

@@ -49,11 +49,14 @@ export const Li = styled.li`
 		transform: scale(0.9);
 	}
 `
-export const DivImgMyWorks = styled.div`
+export const DivImgMyWorks = styled.div.attrs(
+	(props: { color: string }) => props
+)`
 	width: auto;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	padding: 2px;
+	background: ${(props) => props.color};
 `
 export const DivTitleMyWorks = styled.div`
 	border-bottom-left-radius: 8px;

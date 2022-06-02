@@ -1,0 +1,30 @@
+{
+  "id": "89bd1665-444e-4a2a-aecf-9e3989d25880",
+  "uid": "voluptas-iste-minus",
+  "type": "my-praises",
+  "data": {
+    "img": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+    },
+    "name": "drive revolutionary architectures",
+    "color": "#4ebfc7",
+    "content": [
+      {
+        "type": "heading1",
+        "text": "Enhance front-end e-markets",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Eu ut laborum laborum laboris consectetur tempor amet sit incididunt eiusmod proident laboris. Non culpa commodo minim duis elit ad id mollit qui proident nostrud in ex culpa. Ex nulla eu mollit elit cupidatat irure dolor.",
+        "spans": []
+      }
+    ]
+  }
+}

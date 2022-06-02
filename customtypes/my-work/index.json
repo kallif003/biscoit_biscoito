@@ -1,0 +1,39 @@
+{
+  "id": "my-work",
+  "label": "My work",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "myWorkTitle": {
+        "type": "Text",
+        "config": {
+          "label": "My Work Title",
+          "placeholder": ""
+        }
+      },
+      "myWorkDescription": {
+        "type": "Text",
+        "config": {
+          "label": "My Work Description",
+          "placeholder": ""
+        }
+      },
+      "myWorkImg": {
+        "type": "Image",
+        "config": {
+          "label": "My Work Img",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

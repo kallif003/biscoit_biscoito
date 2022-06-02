@@ -1,0 +1,46 @@
+{
+  "id": "my-art",
+  "label": "My Art",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Art Title",
+          "placeholder": ""
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Art Description",
+          "placeholder": ""
+        }
+      },
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "color": {
+        "type": "Color",
+        "config": {
+          "label": "Art Color",
+          "placeholder": ""
+        }
+      },
+      "img": {
+        "type": "Image",
+        "config": {
+          "label": "Art Img",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}
