@@ -4,12 +4,12 @@ export const ContainerContact = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	position: relative;
-	margin-right: 5rem;
-	@media (min-width: 0) and (max-width: 767px) {
-		margin-right: 2rem;
-	}
+	align-items: center;
+	margin-top: -7rem;
+	padding-right: 5rem;
+	height: 50rem;
+	width: 100vw;
 	@media (min-width: 768px) and (max-width: 1023px) {
 		margin-right: 2rem;
 	}
@@ -19,9 +19,6 @@ export const Rain = styled.div`
 	background-repeat: repeat-y;
 	background-size: cover;
 	height: 13.8rem;
-	position: absolute;
-	top: 20rem;
-	left: 0;
 	width: 100%;
 	animation: snow 12s linear infinite;
 	@keyframes snow {
@@ -36,7 +33,6 @@ export const Rain = styled.div`
 	}
 	@media (min-width: 0) and (max-width: 767px) {
 		height: 10rem;
-		top: 10rem;
 	}
 	@media (min-width: 768px) and (max-width: 1023px) {
 		height: 12.8rem;
@@ -63,9 +59,12 @@ export const Cloud = styled.div`
 export const ContainerCloud = styled.div`
 	width: 50rem;
 	position: absolute;
-	top: 0px;
+	z-index: 1;
+	top: 1rem;
 	@media (min-width: 0px) and (max-width: 767px) {
 		width: 22rem;
+		top: 4rem;
+		margin-left: 3rem;
 	}
 	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 45.8rem;
@@ -82,12 +81,13 @@ export const ContainerIcon = styled.div`
 `
 export const ContainerRain = styled.div`
 	width: 48rem;
-	position: relative;
-	z-index: -10;
-	margin-left: 5rem;
+	position: absolute;
+	margin: 7rem 0 0 6rem;
+
 	@media (min-width: 0px) and (max-width: 767px) {
 		width: 15.5rem;
-		margin-left: 0;
+		margin-left: 3rem;
+		margin-top: -12rem;
 	}
 	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 40.8rem;

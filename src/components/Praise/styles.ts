@@ -4,10 +4,11 @@ export const ContainerPraise = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-right: 3rem;
+	margin: 0 3rem 10rem 0;
 	@media (min-width: 0px) and (max-width: 767px) {
 		flex-direction: column;
 		margin-right: 1.1rem;
+		margin-bottom: 5rem;
 	}
 `
 
