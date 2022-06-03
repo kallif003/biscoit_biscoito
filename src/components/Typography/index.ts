@@ -58,7 +58,7 @@ export const TitleContact = styled.h1`
 	color: #9a9a9a;
 	font-size: 2rem;
 	font-weight: bold;
-	@media (min-width: 0) and (max-width: 768px) {
+	@media (min-width: 0) and (max-width: 767px) {
 		font-size: 100%;
 		margin-top: -8px;
 	}
@@ -67,7 +67,7 @@ export const TextContact = styled.p`
 	overflow-wrap: break-word;
 	margin-top: 2px;
 	font-weight: 600;
-	@media (min-width: 0) and (max-width: 768px) {
+	@media (min-width: 0) and (max-width: 767px) {
 		font-size: 50%;
 	}
 `
@@ -82,4 +82,15 @@ export const Name = styled.h1`
 export const Comment = styled.p`
 	overflow-wrap: break-word;
 	color: #9a9a9a;
+`
+// HomePage
+export const HomeTitle = styled.h1`
+	color: #f1c50e;
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	margin: 4rem 0 2rem 0;
+	@media (min-width: 0) and (max-width: 767px) {
+		font-size: 2.5rem;
+	}
 `

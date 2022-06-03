@@ -5,7 +5,6 @@ export const ContainerFooter = styled.footer`
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 10rem;
-	margin-top: 2rem;
 	display: flex;
 	justify-content: space-evenly;
 	padding: 1.5rem 4rem 0 0;
@@ -14,6 +13,7 @@ export const ContainerFooter = styled.footer`
 		align-items: center;
 		height: 20rem;
 		padding: 0;
+		margin-top: -15rem;
 	}
 `
 

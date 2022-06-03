@@ -6,7 +6,7 @@ export const ContainerAboutMe = styled.div`
 	align-items: center;
 	background: #ddf3fa;
 	border-radius: 0.5rem;
-	margin-top: 1rem;
+
 	@media (min-width: 300px) and (max-width: 767px) {
 		width: 20rem;
 		flex-direction: column;

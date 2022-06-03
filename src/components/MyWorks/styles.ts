@@ -4,9 +4,11 @@ export const DivMyWorks = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding: 2.5rem;
+	padding: 0 2.5rem;
+	margin-bottom: 10rem;
 	@media (min-width: 0px) and (max-width: 767px) {
 		flex-direction: column;
+		margin-bottom: 5rem;
 	}
 `
 export const DivButtonsMyWorks = styled.div`
