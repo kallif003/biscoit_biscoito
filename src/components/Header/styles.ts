@@ -32,6 +32,7 @@ export const SocialMedia = styled.div`
 	width: 100px;
 	display: flex;
 	justify-content: space-evenly;
+	color: #f1c50e;
 `
 export const Li = styled.li`
 	padding-left: 0.75rem;

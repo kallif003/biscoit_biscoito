@@ -1,5 +1,15 @@
 import React, { useState } from "react"
 import { NextPage } from "next"
+import { Ancora } from "../Buttons"
+import Icon from "@mdi/react"
+import { mdiFacebook } from "@mdi/js"
+import { mdiInstagram } from "@mdi/js"
+import { mdiWhatsapp } from "@mdi/js"
+import { mdiMenu } from "@mdi/js"
+import { mdiClose } from "@mdi/js"
+import Image from "next/image"
+import biscuit from "../../assets/biscuit.png"
+import Link from "next/link"
 import {
 	Container,
 	Menu,
@@ -10,20 +20,11 @@ import {
 	Li,
 	LiMobile,
 } from "."
-import { Ancora } from "../Buttons"
-import Icon from "@mdi/react"
-import { mdiFacebook } from "@mdi/js"
-import { mdiInstagram } from "@mdi/js"
-import { mdiWhatsapp } from "@mdi/js"
-import { mdiMenu } from "@mdi/js"
-import { mdiClose } from "@mdi/js"
-import Image from "next/image"
-import biscuit from "../../assets/biscuit.png"
 
 const Header: NextPage = () => {
 	const [active, setActive] = useState(true)
 
-	const troca = () => {
+	const change = () => {
 		setActive(!active)
 	}
 
@@ -35,21 +36,21 @@ const Header: NextPage = () => {
 				</div>
 
 				<DivButton className="text-[1.2rem]">
-					<Ancora
-						href="#aboutMe"
-						className="hover:underline decoration-yellow underline-offset-8">
-						Home
-					</Ancora>
-					<Ancora
-						href="#aboutMe"
-						className="hover:underline decoration-yellow underline-offset-8">
-						Sobre
-					</Ancora>
-					<Ancora
-						href="#aboutMe"
-						className="hover:underline decoration-yellow underline-offset-8">
-						Produtos
-					</Ancora>
+					<Link href="/" passHref>
+						<Ancora className="hover:underline decoration-yellow underline-offset-8">
+							Home
+						</Ancora>
+					</Link>
+					<Link href="/#aboutMe" passHref>
+						<Ancora className="hover:underline decoration-yellow underline-offset-8">
+							Sobre
+						</Ancora>
+					</Link>
+					<Link href="/#works" passHref>
+						<Ancora className="hover:underline decoration-yellow underline-offset-8">
+							Produtos
+						</Ancora>
+					</Link>
 				</DivButton>
 
 				<SocialMedia>
@@ -57,25 +58,22 @@ const Header: NextPage = () => {
 						path={mdiFacebook}
 						title="User Profile"
 						size={1.2}
-						color="#F1C50E"
-						className="active:scale-90"
+						className="active:scale-90 hover:text-[#e98f93]"
 					/>
 					<Icon
 						path={mdiInstagram}
 						title="User Profile"
 						size={1.2}
-						color="#F1C50E"
-						className="active:scale-90"
+						className="active:scale-90 hover:text-[#e98f93]"
 					/>
 					<Icon
 						path={mdiWhatsapp}
 						title="User Profile"
 						size={1.2}
-						color="#F1C50E"
-						className="active:scale-90"
+						className="active:scale-90 hover:text-[#e98f93]"
 					/>
 				</SocialMedia>
-				<DivMobile onClick={troca}>
+				<DivMobile onClick={change}>
 					<Icon
 						path={mdiMenu}
 						size="35px"
@@ -93,26 +91,26 @@ const Header: NextPage = () => {
 			</Menu>
 			<nav className={active ? "hidden" : "block text-[25px] "}>
 				<Ul>
-					<Li className={LiMobile} id="style-li">
-						<Ancora
-							href={"/"}
-							className="hover:text-yellow bg-white rounded-lg px-10 ">
-							Home
-						</Ancora>
+					<Li className={LiMobile} id="style-li" onClick={change}>
+						<Link href="/" passHref>
+							<Ancora className="hover:text-yellow bg-white rounded-lg px-10 ">
+								Home
+							</Ancora>
+						</Link>
 					</Li>
-					<Li className={LiMobile} id="style-li">
-						<Ancora
-							href={"/"}
-							className="hover:text-yellow bg-white rounded-lg px-7">
-							Projetos
-						</Ancora>
+					<Li className={LiMobile} id="style-li" onClick={change}>
+						<Link href="/#aboutMe" passHref>
+							<Ancora className="hover:text-yellow bg-white rounded-lg px-10">
+								Sobre
+							</Ancora>
+						</Link>
 					</Li>
-					<Li className={LiMobile} id="style-li">
-						<Ancora
-							href={"/"}
-							className="hover:text-yellow bg-white rounded-lg px-10">
-							Sobre
-						</Ancora>
+					<Li className={LiMobile} id="style-li" onClick={change}>
+						<Link href="/#works" passHref>
+							<Ancora className="hover:text-yellow bg-white rounded-lg px-7">
+								Projetos
+							</Ancora>
+						</Link>
 					</Li>
 				</Ul>
 			</nav>

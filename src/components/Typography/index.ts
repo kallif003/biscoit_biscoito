@@ -94,3 +94,20 @@ export const HomeTitle = styled.h1`
 		font-size: 2.5rem;
 	}
 `
+// Workpage
+export const TitleWorkpage = styled.h1`
+	font-weight: bold;
+	font-size: 3rem;
+	color: #fff;
+	@media (min-width: 0) and (max-width: 767px) {
+		font-size: 2rem;
+	}
+`
+export const ParagraphWorkpage = styled.p`
+	font-weight: 700;
+	color: #fff;
+	font-size: 1.1rem;
+	@media (min-width: 1280px) {
+		text-align: left;
+	}
+`

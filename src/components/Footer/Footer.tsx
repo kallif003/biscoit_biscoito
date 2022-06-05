@@ -91,19 +91,19 @@ const Footer: NextPage = () => {
 						path={mdiFacebook}
 						title="User Profile"
 						size={1.2}
-						className="active:scale-90"
+						className="active:scale-90 hover:text-[#e98f93]"
 					/>
 					<Icon
 						path={mdiInstagram}
 						title="User Profile"
 						size={1.2}
-						className="active:scale-90"
+						className="active:scale-90 hover:text-[#e98f93]"
 					/>
 					<Icon
 						path={mdiWhatsapp}
 						title="User Profile"
 						size={1.2}
-						className="active:scale-90"
+						className="active:scale-90 hover:text-[#e98f93]"
 					/>
 				</DivIcon>
 			</ContainerSocialMedia>

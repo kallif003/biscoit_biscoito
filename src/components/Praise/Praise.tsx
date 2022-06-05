@@ -33,7 +33,7 @@ const Praise: NextPage = () => {
 					{ field: "document.first_publication_date", direction: "desc" },
 				],
 			})
-			console.log(info)
+
 			const data = info.map((e: any) => ({
 				slug: e.uid,
 				name: e.data.name,

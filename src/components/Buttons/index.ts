@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import Link from "next/link"
 
 export const Ancora = styled.a`
 	text-decoration-line: none;
@@ -37,7 +38,7 @@ export const ButtonsMyWorks = styled.button`
 export const InstagramButton = styled.button`
 	width: 15rem;
 	height: 3rem;
-	color: #7a7a7a;
+	color: #fff;
 	background: #f1c50e;
 	border-radius: 0.5rem;
 	font-weight: bold;

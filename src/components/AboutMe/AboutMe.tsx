@@ -40,7 +40,7 @@ const AboutMe: NextPage = () => {
 		}
 
 		getProps()
-	})
+	}, [])
 	return (
 		<div className="flex justify-center items-center mb-20 ">
 			{aboutMe.map((about) => (
@@ -58,6 +58,7 @@ const AboutMe: NextPage = () => {
 					</Divtext>
 				</ContainerAboutMe>
 			))}
+			<h1 id="work" />
 		</div>
 	)
 }

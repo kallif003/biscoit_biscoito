@@ -5,4 +5,8 @@ export {
 	DivImgMyWorks,
 	DivTitleMyWorks,
 	Li,
+	DivWorkpage,
+	ContainerTextWorkpage,
+	ContainerCarousel,
+	ContainerWorkpage,
 } from "./styles"
