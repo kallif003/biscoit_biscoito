@@ -73,3 +73,54 @@ export const DivTitleMyWorks = styled.div`
 	border-width: 1px;
 	color: #9a9a9a;
 `
+export const DivWorkpage = styled.div.attrs(
+	(props: { color: string }) => props
+)`
+	width: 55rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: ${(props) => props.color};
+	border-radius: 0.5rem;
+	margin-top: 8rem;
+	padding: 2rem;
+	@media (min-width: 0px) and (max-width: 767px) {
+		flex-direction: column;
+		width: 18rem;
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 45rem;
+	}
+`
+export const ContainerTextWorkpage = styled.div`
+	width: 30rem;
+	padding: 2rem;
+
+	@media (min-width: 0px) and (max-width: 767px) {
+		width: 15rem;
+		text-align: center;
+	}
+`
+export const ContainerCarousel = styled.div`
+	width: 67rem;
+	margin: 1.25rem 0 2.5rem 0;
+	@media (min-width: 0px) and (max-width: 767px) {
+		width: 18rem;
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		width: 45rem;
+	}
+	@media (min-width: 1024px) and (max-width: 1279px) {
+		width: 55rem;
+	}
+`
+export const ContainerWorkpage = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 3rem;
+	width: 100vw;
+	@media (min-width: 0px) and (max-width: 767px) {
+		padding: 0 3.5rem 0 3.5rem;
+	}
+`

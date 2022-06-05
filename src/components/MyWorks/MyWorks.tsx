@@ -6,6 +6,8 @@ import { mdiCakeVariantOutline } from "@mdi/js"
 import { mdiPaletteOutline } from "@mdi/js"
 import { mdiCookieOutline } from "@mdi/js"
 import { ButtonsMyWorks } from "../Buttons"
+import { createClient } from "../../../prismicio"
+import Link from "next/link"
 import {
 	DivMyWorks,
 	DivButtonsMyWorks,
@@ -14,7 +16,6 @@ import {
 	DivTitleMyWorks,
 	Li,
 } from "."
-import { createClient } from "../../../prismicio"
 
 interface List {
 	slug: string
@@ -25,6 +26,7 @@ interface List {
 
 const MyWorks: NextPage = () => {
 	const [myWork, setMyWork] = useState<List[]>([])
+	const [type, setType] = useState("my-cakes")
 
 	useEffect(() => {
 		async function getProps() {
@@ -41,6 +43,7 @@ const MyWorks: NextPage = () => {
 				image: e.data.img.url,
 				color: e.data.color,
 			}))
+
 			setMyWork(data)
 		}
 
@@ -61,6 +64,7 @@ const MyWorks: NextPage = () => {
 			image: e.data.img.url,
 			color: e.data.color,
 		}))
+		setType(type)
 		setMyWork(data)
 	}
 
@@ -94,14 +98,27 @@ const MyWorks: NextPage = () => {
 			</DivButtonsMyWorks>
 			<GridMyWorks>
 				{myWork.slice(0, 6).map((cake) => (
-					<Li key={cake.slug}>
-						<DivImgMyWorks color={cake.color}>
-							<Image src={cake.image} alt="biscuit" width={500} height={324} />
-						</DivImgMyWorks>
-						<DivTitleMyWorks>
-							<h1>{cake.title}</h1>
-						</DivTitleMyWorks>
-					</Li>
+					<Link
+						href={{
+							pathname: "/Workpage",
+							query: { slug: cake.slug, type: type },
+						}}
+						passHref
+						key={cake.slug}>
+						<Li>
+							<DivImgMyWorks color={cake.color}>
+								<Image
+									src={cake.image}
+									alt="biscuit"
+									width={500}
+									height={324}
+								/>
+							</DivImgMyWorks>
+							<DivTitleMyWorks>
+								<h1>{cake.title}</h1>
+							</DivTitleMyWorks>
+						</Li>
+					</Link>
 				))}
 			</GridMyWorks>
 		</DivMyWorks>

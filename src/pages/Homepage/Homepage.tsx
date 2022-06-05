@@ -8,6 +8,7 @@ import Footer from "../../components/Footer/Footer"
 import Praise from "../../components/Praise/Praise"
 import Contact from "../../components/Contact/Contact"
 import { HomeTitle } from "../../components/Typography"
+import { InstagramButton } from "../../components/Buttons"
 
 const Homepage: NextPage = () => {
 	return (
@@ -15,14 +16,15 @@ const Homepage: NextPage = () => {
 			<Header />
 			<Logo />
 			<section>
-				<HomeTitle>Seja Bem Vindo</HomeTitle>
+				<HomeTitle id="aboutMe">Seja Bem Vindo</HomeTitle>
 				<AboutMe />
-				<HomeTitle>Meus trabalhos</HomeTitle>
+				<HomeTitle id="works">Meus trabalhos</HomeTitle>
 				<MyWorks />
 				<HomeTitle>Elogios</HomeTitle>
 				<Praise />
 				<HomeTitle>Entre em contato</HomeTitle>
 				<Contact />
+				<InstagramButton>Instragram</InstagramButton>
 				<Footer />
 			</section>
 		</>
