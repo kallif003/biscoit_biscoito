@@ -5,15 +5,14 @@ import Image from "next/image"
 import { createClient } from "../../../prismicio"
 import { useRouter } from "next/router"
 import { PrismicRichText } from "@prismicio/react"
-import Carousel from "react-elastic-carousel"
 import Header from "../../components/Header/Header"
 import { TitleWorkpage, ParagraphWorkpage } from "../../components/Typography"
 import {
 	DivWorkpage,
 	ContainerTextWorkpage,
-	Li,
-	DivImgMyWorks,
-	DivTitleMyWorks,
+	// Li,
+	// DivImgMyWorks,
+	// DivTitleMyWorks,
 	ContainerCarousel,
 	ContainerWorkpage,
 } from "../../components/MyWorks"
@@ -37,15 +36,9 @@ const Workpage: NextPage = () => {
 	const router = useRouter()
 	const [work, setWork] = useState<List[]>([])
 	const [listWork, setListWork] = useState<ListWork[]>([])
-	const [width, setWidth] = useState(3)
 	const { slug, type } = router.query
 
 	useEffect(() => {
-		const size = window.screen.width
-		if (size <= 769) {
-			setWidth(1)
-		}
-		console.log(size)
 		async function getProps(type: string, slug: string) {
 			const client = createClient()
 			const response = [await client.getByUID(type, slug)]
@@ -81,7 +74,7 @@ const Workpage: NextPage = () => {
 			getProps(String(type), String(slug))
 			getListWorks(String(type))
 		}
-	}, [])
+	})
 
 	async function getWork(type: string, slug: string) {
 		const client = createClient()
@@ -118,28 +111,7 @@ const Workpage: NextPage = () => {
 					</ContainerTextWorkpage>
 				</DivWorkpage>
 			))}
-			<ContainerCarousel>
-				<Carousel itemsToShow={width}>
-					{listWork.map((list) => (
-						<Li
-							className="w-60 md:w-48"
-							key={list.slug}
-							onClick={() => getWork(String(type), list.slug)}>
-							<DivImgMyWorks color={list.color}>
-								<Image
-									src={list.image}
-									alt="biscuit"
-									width={500}
-									height={324}
-								/>
-							</DivImgMyWorks>
-							<DivTitleMyWorks>
-								<h1>{list.title}</h1>
-							</DivTitleMyWorks>
-						</Li>
-					))}
-				</Carousel>
-			</ContainerCarousel>
+			<ContainerCarousel></ContainerCarousel>
 		</ContainerWorkpage>
 	)
 }

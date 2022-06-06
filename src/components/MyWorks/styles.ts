@@ -102,7 +102,7 @@ export const ContainerTextWorkpage = styled.div`
 	}
 `
 export const ContainerCarousel = styled.div`
-	width: 67rem;
+	width: 55rem;
 	margin: 1.25rem 0 2.5rem 0;
 	@media (min-width: 0px) and (max-width: 767px) {
 		width: 18rem;
