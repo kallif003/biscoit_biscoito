@@ -37,15 +37,9 @@ const Workpage: NextPage = () => {
 	const router = useRouter()
 	const [work, setWork] = useState<List[]>([])
 	const [listWork, setListWork] = useState<ListWork[]>([])
-	const [width, setWidth] = useState(3)
 	const { slug, type } = router.query
 
 	useEffect(() => {
-		const size = window.screen.width
-		if (size <= 769) {
-			setWidth(1)
-		}
-		console.log(size)
 		async function getProps(type: string, slug: string) {
 			const client = createClient()
 			const response = [await client.getByUID(type, slug)]
@@ -119,10 +113,10 @@ const Workpage: NextPage = () => {
 				</DivWorkpage>
 			))}
 			<ContainerCarousel>
-				<Carousel itemsToShow={width}>
+				<Carousel itemsToShow={1}>
 					{listWork.map((list) => (
 						<Li
-							className="w-60 md:w-48"
+							className="w-60 md:w-48 sm:w-40"
 							key={list.slug}
 							onClick={() => getWork(String(type), list.slug)}>
 							<DivImgMyWorks color={list.color}>
