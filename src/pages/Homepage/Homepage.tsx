@@ -8,7 +8,6 @@ import Footer from "../../components/Footer/Footer"
 import Praise from "../../components/Praise/Praise"
 import Contact from "../../components/Contact/Contact"
 import { HomeTitle } from "../../components/Typography"
-import { InstagramButton } from "../../components/Buttons"
 import Instagram from "../../components/Instagram/Instagram"
 
 const Homepage: NextPage = () => {
@@ -27,7 +26,6 @@ const Homepage: NextPage = () => {
 				<Contact />
 				<HomeTitle>Conheça meu Instagram</HomeTitle>
 				<Instagram />
-				<InstagramButton>Instragram</InstagramButton>
 				<Footer />
 			</section>
 		</>
