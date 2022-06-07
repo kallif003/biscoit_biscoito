@@ -45,7 +45,7 @@ const Footer: NextPage = () => {
 		}
 
 		getProps()
-	})
+	}, [])
 
 	return (
 		<ContainerFooter>

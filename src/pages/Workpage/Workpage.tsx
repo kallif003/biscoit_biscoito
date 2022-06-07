@@ -75,7 +75,7 @@ const Workpage: NextPage = () => {
 			getProps(String(type), String(slug))
 			getListWorks(String(type))
 		}
-	})
+	}, [])
 
 	async function getWork(type: string, slug: string) {
 		const client = createClient()
@@ -90,6 +90,7 @@ const Workpage: NextPage = () => {
 		}))
 
 		setWork(data)
+		console.log(work)
 	}
 	return (
 		<ContainerWorkpage>

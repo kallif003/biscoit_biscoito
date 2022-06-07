@@ -21,5 +21,5 @@ export const DivImg = styled.div.attrs((props: { deg: string }) => props)`
 	transform: rotate(${(props) => props.deg});
 `
 export const DivCarousel = styled.div`
-	width: 60rem;
+	width: 50rem;
 `
