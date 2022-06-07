@@ -6,7 +6,6 @@ import { ContainerInstragram, DivCarousel, DivImg } from "."
 import { key } from "../../config"
 import { InstagramButton } from "../../components/Buttons"
 import { Li } from "../../components/MyWorks"
-import Link from "next/link"
 
 interface ListPost {
 	id: any
