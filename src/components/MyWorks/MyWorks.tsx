@@ -48,7 +48,7 @@ const MyWorks: NextPage = () => {
 		}
 
 		getProps()
-	}, [])
+	})
 
 	async function cakes(type: string) {
 		const client = createClient()
