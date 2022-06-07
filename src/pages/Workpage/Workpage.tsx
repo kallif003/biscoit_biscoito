@@ -6,13 +6,14 @@ import { createClient } from "../../../prismicio"
 import { useRouter } from "next/router"
 import { PrismicRichText } from "@prismicio/react"
 import Header from "../../components/Header/Header"
+import Carousel from "react-elastic-carousel"
 import { TitleWorkpage, ParagraphWorkpage } from "../../components/Typography"
 import {
 	DivWorkpage,
 	ContainerTextWorkpage,
-	// Li,
-	// DivImgMyWorks,
-	// DivTitleMyWorks,
+	Li,
+	DivImgMyWorks,
+	DivTitleMyWorks,
 	ContainerCarousel,
 	ContainerWorkpage,
 } from "../../components/MyWorks"
@@ -74,7 +75,7 @@ const Workpage: NextPage = () => {
 			getProps(String(type), String(slug))
 			getListWorks(String(type))
 		}
-	})
+	}, [])
 
 	async function getWork(type: string, slug: string) {
 		const client = createClient()
@@ -89,6 +90,7 @@ const Workpage: NextPage = () => {
 		}))
 
 		setWork(data)
+		console.log(work)
 	}
 	return (
 		<ContainerWorkpage>
@@ -111,7 +113,28 @@ const Workpage: NextPage = () => {
 					</ContainerTextWorkpage>
 				</DivWorkpage>
 			))}
-			<ContainerCarousel></ContainerCarousel>
+			<ContainerCarousel>
+				<Carousel>
+					{listWork.map((list) => (
+						<Li
+							className="w-60 md:w-48 sm:w-40"
+							key={list.slug}
+							onClick={() => getWork(String(type), list.slug)}>
+							<DivImgMyWorks color={list.color}>
+								<Image
+									src={list.image}
+									alt="biscuit"
+									width={500}
+									height={324}
+								/>
+							</DivImgMyWorks>
+							<DivTitleMyWorks>
+								<h1>{list.title}</h1>
+							</DivTitleMyWorks>
+						</Li>
+					))}
+				</Carousel>
+			</ContainerCarousel>
 		</ContainerWorkpage>
 	)
 }
