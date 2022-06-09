@@ -9,10 +9,7 @@ import Contact from "../../components/Contact/Contact"
 import { HomeTitle } from "../../components/Typography"
 import Instagram from "../../components/Instagram/Instagram"
 
-interface Props {
-	showArrows: boolean
-}
-const Homepage = ({ showArrows }: Props) => {
+const Homepage = () => {
 	return (
 		<>
 			<Header />
