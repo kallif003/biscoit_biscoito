@@ -1,5 +1,4 @@
 import React from "react"
-import { NextPage } from "next"
 import Header from "../../components/Header/Header"
 import Logo from "../../components/Logo/Logo"
 import AboutMe from "../../components/AboutMe/AboutMe"
@@ -10,7 +9,10 @@ import Contact from "../../components/Contact/Contact"
 import { HomeTitle } from "../../components/Typography"
 import Instagram from "../../components/Instagram/Instagram"
 
-const Homepage: NextPage = () => {
+interface Props {
+	showArrows: boolean
+}
+const Homepage = ({ showArrows }: Props) => {
 	return (
 		<>
 			<Header />
@@ -24,8 +26,12 @@ const Homepage: NextPage = () => {
 				<Praise />
 				<HomeTitle>Entre em contato</HomeTitle>
 				<Contact />
-				<HomeTitle>Conheça meu Instagram</HomeTitle>
-				<Instagram />
+				<div className="sm:hidden">
+					<Instagram showArrows={true} />
+				</div>
+				<div className="md:hidden lg:hidden xl:hidden mt-[-25rem] mb-[30rem]">
+					<Instagram showArrows={false} />
+				</div>
 				<Footer />
 			</section>
 		</>

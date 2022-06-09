@@ -98,27 +98,52 @@ const MyWorks: NextPage = () => {
 			</DivButtonsMyWorks>
 			<GridMyWorks>
 				{myWork.slice(0, 6).map((cake) => (
-					<Link
-						href={{
-							pathname: "/Workpage",
-							query: { slug: cake.slug, type: type },
-						}}
-						passHref
-						key={cake.slug}>
-						<Li>
-							<DivImgMyWorks color={cake.color}>
-								<Image
-									src={cake.image}
-									alt="biscuit"
-									width={500}
-									height={324}
-								/>
-							</DivImgMyWorks>
-							<DivTitleMyWorks>
-								<h1>{cake.title}</h1>
-							</DivTitleMyWorks>
-						</Li>
-					</Link>
+					<div key={cake.slug}>
+						<div className="sm:hidden">
+							<Link
+								href={{
+									pathname: "/Workpage",
+									query: { slug: cake.slug, type: type, amount: 3 },
+								}}
+								passHref>
+								<Li>
+									<DivImgMyWorks color={cake.color}>
+										<Image
+											src={cake.image}
+											alt="biscuit"
+											width={500}
+											height={324}
+										/>
+									</DivImgMyWorks>
+									<DivTitleMyWorks>
+										<h1>{cake.title}</h1>
+									</DivTitleMyWorks>
+								</Li>
+							</Link>
+						</div>
+						<div className="md:hidden lg:hidden xl:hidden">
+							<Link
+								href={{
+									pathname: "/Workpage",
+									query: { slug: cake.slug, type: type, amount: 1 },
+								}}
+								passHref>
+								<Li>
+									<DivImgMyWorks color={cake.color}>
+										<Image
+											src={cake.image}
+											alt="biscuit"
+											width={500}
+											height={324}
+										/>
+									</DivImgMyWorks>
+									<DivTitleMyWorks>
+										<h1>{cake.title}</h1>
+									</DivTitleMyWorks>
+								</Li>
+							</Link>
+						</div>
+					</div>
 				))}
 			</GridMyWorks>
 		</DivMyWorks>

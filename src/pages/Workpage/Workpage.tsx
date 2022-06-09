@@ -37,7 +37,7 @@ const Workpage: NextPage = () => {
 	const router = useRouter()
 	const [work, setWork] = useState<List[]>([])
 	const [listWork, setListWork] = useState<ListWork[]>([])
-	const { slug, type } = router.query
+	const { slug, type, amount } = router.query
 
 	useEffect(() => {
 		async function getProps(type: string, slug: string) {
@@ -114,7 +114,7 @@ const Workpage: NextPage = () => {
 				</DivWorkpage>
 			))}
 			<ContainerCarousel>
-				<Carousel>
+				<Carousel pagination={false} itemsToShow={Number(amount)}>
 					{listWork.map((list) => (
 						<Li
 							className="w-60 md:w-48 sm:w-40"

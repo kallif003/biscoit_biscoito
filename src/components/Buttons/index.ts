@@ -42,7 +42,7 @@ export const InstagramButton = styled.button`
 	border-radius: 0.5rem;
 	font-weight: bold;
 	font-size: 1.1rem;
-	margin-top: -5rem;
+	margin-top: 2rem;
 	:active {
 		transform: scale(0.9);
 	}

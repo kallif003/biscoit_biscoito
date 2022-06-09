@@ -5,7 +5,7 @@ export const ContainerInstragram = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 8rem;
+	margin: -8rem 0 8rem 0;
 	@media (min-width: 0px) and (max-width: 767px) {
 		padding: 0 3.5rem 0 3.5rem;
 	}
@@ -24,4 +24,7 @@ export const DivCarousel = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	@media (min-width: 0px) and (max-width: 767px) {
+		width: 25rem;
+	}
 `
