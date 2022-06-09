@@ -13,7 +13,7 @@ export const Title = styled.h1`
 	@media (min-width: 0px) and (max-width: 767px) {
 		font-size: 200%;
 		span {
-			font-size: 150%;
+			font-size: 100%;
 		}
 	}
 	@media (min-width: 1024px) and (max-width: 1279px) {
@@ -77,7 +77,6 @@ export const Name = styled.h1`
 	color: #7a7a7a;
 	font-weight: bold;
 	font-size: 1.5rem;
-	margin-top: -1rem;
 `
 export const Comment = styled.p`
 	overflow-wrap: break-word;

@@ -103,7 +103,11 @@ const MyWorks: NextPage = () => {
 							<Link
 								href={{
 									pathname: "/Workpage",
-									query: { slug: cake.slug, type: type, amount: 3 },
+									query: {
+										slug: cake.slug,
+										type: type,
+										amount: 3,
+									},
 								}}
 								passHref>
 								<Li>
@@ -125,7 +129,11 @@ const MyWorks: NextPage = () => {
 							<Link
 								href={{
 									pathname: "/Workpage",
-									query: { slug: cake.slug, type: type, amount: 1 },
+									query: {
+										slug: cake.slug,
+										type: type,
+										amount: 1,
+									},
 								}}
 								passHref>
 								<Li>
