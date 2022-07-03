@@ -20,24 +20,39 @@ const Contact: NextPage = () => {
 			<ContainerCloud>
 				<Cloud>
 					<ContainerIcon>
-						<Icon
-							path={mdiFacebook}
-							title="User Profile"
-							size={2}
-							className="active:scale-90 hover:text-[#e98f93]"
-						/>
-						<Icon
-							path={mdiInstagram}
-							title="User Profile"
-							size={2}
-							className="active:scale-90 hover:text-[#e98f93]"
-						/>
-						<Icon
-							path={mdiWhatsapp}
-							title="User Profile"
-							size={2}
-							className="active:scale-90 hover:text-[#e98f93]"
-						/>
+						<a
+							href="https://www.facebook.com/evelyn.camargo.3"
+							target="_blank"
+							rel="noreferrer">
+							<Icon
+								path={mdiFacebook}
+								title="User Profile"
+								size={2}
+								className="active:scale-90 hover:text-[#e98f93]"
+							/>
+						</a>
+						<a
+							href="https://www.instagram.com/biscuitebiscoito/"
+							target="_blank"
+							rel="noreferrer">
+							<Icon
+								path={mdiInstagram}
+								title="User Profile"
+								size={2}
+								className="active:scale-90 hover:text-[#e98f93]"
+							/>
+						</a>
+						<a
+							href="https://api.whatsapp.com/send?l=pt_pt&phone=553598946287"
+							target="_blank"
+							rel="noreferrer">
+							<Icon
+								path={mdiWhatsapp}
+								title="User Profile"
+								size={2}
+								className="active:scale-90 hover:text-[#e98f93]"
+							/>
+						</a>
 					</ContainerIcon>
 
 					<TitleContact>Encomendas e Orçamentos</TitleContact>

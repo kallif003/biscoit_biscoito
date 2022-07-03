@@ -86,7 +86,7 @@ export const DivWorkpage = styled.div.attrs(
 	padding: 2rem;
 	@media (min-width: 0px) and (max-width: 767px) {
 		flex-direction: column;
-		width: 18rem;
+		width: auto;
 	}
 	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 45rem;

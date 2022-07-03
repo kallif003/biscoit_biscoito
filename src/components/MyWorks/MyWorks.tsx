@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { NextPage } from "next"
 import Icon from "@mdi/react"
 import Image from "next/image"
 import { mdiCakeVariantOutline } from "@mdi/js"
@@ -24,7 +23,11 @@ interface List {
 	color: string
 }
 
-const MyWorks: NextPage = () => {
+interface Props {
+	amount: number
+}
+
+const MyWorks = ({ amount }: Props) => {
 	const [myWork, setMyWork] = useState<List[]>([])
 	const [type, setType] = useState("my-cakes")
 
@@ -97,28 +100,61 @@ const MyWorks: NextPage = () => {
 				</ButtonsMyWorks>
 			</DivButtonsMyWorks>
 			<GridMyWorks>
-				{myWork.slice(0, 6).map((cake) => (
-					<Link
-						href={{
-							pathname: "/Workpage",
-							query: { slug: cake.slug, type: type },
-						}}
-						passHref
-						key={cake.slug}>
-						<Li>
-							<DivImgMyWorks color={cake.color}>
-								<Image
-									src={cake.image}
-									alt="biscuit"
-									width={500}
-									height={324}
-								/>
-							</DivImgMyWorks>
-							<DivTitleMyWorks>
-								<h1>{cake.title}</h1>
-							</DivTitleMyWorks>
-						</Li>
-					</Link>
+				{myWork.slice(0, amount).map((cake) => (
+					<div key={cake.slug}>
+						<div className="sm:hidden">
+							<Link
+								href={{
+									pathname: "/Workpage",
+									query: {
+										slug: cake.slug,
+										type: type,
+										amount: 3,
+									},
+								}}
+								passHref>
+								<Li>
+									<DivImgMyWorks color={cake.color}>
+										<Image
+											src={cake.image}
+											alt="biscuit"
+											width={500}
+											height={324}
+										/>
+									</DivImgMyWorks>
+									<DivTitleMyWorks>
+										<h1>{cake.title}</h1>
+									</DivTitleMyWorks>
+								</Li>
+							</Link>
+						</div>
+						<div className="md:hidden lg:hidden xl:hidden">
+							<Link
+								href={{
+									pathname: "/Workpage",
+									query: {
+										slug: cake.slug,
+										type: type,
+										amount: 1,
+									},
+								}}
+								passHref>
+								<Li>
+									<DivImgMyWorks color={cake.color}>
+										<Image
+											src={cake.image}
+											alt="biscuit"
+											width={500}
+											height={324}
+										/>
+									</DivImgMyWorks>
+									<DivTitleMyWorks>
+										<h1>{cake.title}</h1>
+									</DivTitleMyWorks>
+								</Li>
+							</Link>
+						</div>
+					</div>
 				))}
 			</GridMyWorks>
 		</DivMyWorks>

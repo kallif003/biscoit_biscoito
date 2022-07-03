@@ -21,6 +21,7 @@ export const DivImage = styled.div`
 	width: 25rem;
 	background-image: url("https://user-images.githubusercontent.com/66094168/169720541-1aa3edd4-82e9-4488-949b-e771a974739a.png");
 	background-position: center;
+	background-repeat: no-repeat;
 	@media (min-width: 300px) and (max-width: 767px) {
 		width: 20rem;
 	}

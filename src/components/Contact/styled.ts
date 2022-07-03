@@ -64,7 +64,7 @@ export const ContainerCloud = styled.div`
 	@media (min-width: 0px) and (max-width: 767px) {
 		width: 22rem;
 		top: 4rem;
-		margin-left: 3rem;
+		margin-left: 4.5rem;
 	}
 	@media (min-width: 768px) and (max-width: 1023px) {
 		width: 45.8rem;

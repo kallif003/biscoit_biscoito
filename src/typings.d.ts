@@ -4,6 +4,8 @@ declare module "react-elastic-carousel" {
 		itemsToShow?: number
 		children?: any
 		itemPadding?: number[]
+		pagination?: boolean
+		showArrows?: boolean
 	}
 
 	declare class Carousel extends React.Component<ReactElasticCarouselProps> {}

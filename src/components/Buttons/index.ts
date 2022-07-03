@@ -34,7 +34,7 @@ export const ButtonsMyWorks = styled.button`
 		width: 5rem;
 	}
 `
-export const InstagramButton = styled.button`
+export const Button = styled.button`
 	width: 15rem;
 	height: 3rem;
 	color: #fff;
@@ -42,6 +42,7 @@ export const InstagramButton = styled.button`
 	border-radius: 0.5rem;
 	font-weight: bold;
 	font-size: 1.1rem;
+	margin-top: 2rem;
 	:active {
 		transform: scale(0.9);
 	}
