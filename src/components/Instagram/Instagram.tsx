@@ -5,7 +5,7 @@ import Icon from "@mdi/react"
 import Carousel from "react-elastic-carousel"
 import { ContainerInstragram, DivCarousel, DivImg } from "."
 import { key } from "../../config"
-import { InstagramButton } from "../../components/Buttons"
+import { Button } from "../../components/Buttons"
 import { Li } from "../../components/MyWorks"
 import { HomeTitle } from "../../components/Typography"
 
@@ -104,7 +104,7 @@ const Instagram = ({ showArrows }: Props) => {
 					href="https://www.instagram.com/biscuitebiscoito/"
 					target="_blank"
 					rel="noreferrer">
-					<InstagramButton>Instagram</InstagramButton>
+					<Button>Instagram</Button>
 				</a>
 			</DivCarousel>
 		</ContainerInstragram>

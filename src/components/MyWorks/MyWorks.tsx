@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { NextPage } from "next"
 import Icon from "@mdi/react"
 import Image from "next/image"
 import { mdiCakeVariantOutline } from "@mdi/js"
@@ -24,7 +23,11 @@ interface List {
 	color: string
 }
 
-const MyWorks: NextPage = () => {
+interface Props {
+	amount: number
+}
+
+const MyWorks = ({ amount }: Props) => {
 	const [myWork, setMyWork] = useState<List[]>([])
 	const [type, setType] = useState("my-cakes")
 
@@ -97,7 +100,7 @@ const MyWorks: NextPage = () => {
 				</ButtonsMyWorks>
 			</DivButtonsMyWorks>
 			<GridMyWorks>
-				{myWork.slice(0, 6).map((cake) => (
+				{myWork.slice(0, amount).map((cake) => (
 					<div key={cake.slug}>
 						<div className="sm:hidden">
 							<Link

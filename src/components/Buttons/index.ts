@@ -34,7 +34,7 @@ export const ButtonsMyWorks = styled.button`
 		width: 5rem;
 	}
 `
-export const InstagramButton = styled.button`
+export const Button = styled.button`
 	width: 15rem;
 	height: 3rem;
 	color: #fff;

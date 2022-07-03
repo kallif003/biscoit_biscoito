@@ -59,8 +59,8 @@ export const TitleContact = styled.h1`
 	font-size: 2rem;
 	font-weight: bold;
 	@media (min-width: 0) and (max-width: 767px) {
-		font-size: 100%;
-		margin-top: -8px;
+		font-size: 110%;
+		margin-top: -2px;
 	}
 `
 export const TextContact = styled.p`
