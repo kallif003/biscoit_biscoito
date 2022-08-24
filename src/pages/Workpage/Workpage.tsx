@@ -75,6 +75,8 @@ const Workpage: NextPage = () => {
 			getProps(String(type), String(slug))
 			getListWorks(String(type))
 		}
+
+		console.log(work)
 	}, [])
 
 	async function getWork(type: string, slug: string) {

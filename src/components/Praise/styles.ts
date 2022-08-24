@@ -39,7 +39,7 @@ export const DivImgPraise = styled.div.attrs(
 	background: ${(props) => props.color};
 	border-radius: 0.5rem;
 	width: 5.2rem;
-	height: 5rem;
+	height: 4.8rem;
 	margin-right: 4rem;
 	display: flex;
 	align-items: flex-end;

@@ -1,19 +1,38 @@
 {
-  "id": "d86c2732-6afb-4d20-9a7c-4f0fd26ba7da",
-  "uid": "ea-itaque-eos",
+  "id": "mock-doc-id",
+  "url": null,
   "type": "my-art",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
   "data": {
-    "title": "incentivize innovative web-readiness",
-    "description": "streamline efficient applications",
-    "color": "#f3d03b",
+    "title": "weight",
+    "color": "#e7e020",
     "img": {
       "dimensions": {
         "width": 900,
         "height": 500
       },
-      "alt": "Placeholder image",
+      "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
-    }
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+    },
+    "description": [
+      {
+        "type": "heading1",
+        "text": "Managed",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Consectetur velit exercitation nisi. Et reprehenderit commodo esse occaecat id Lorem sit amet deserunt non commodo occaecat. Ea in quis velit.",
+        "spans": []
+      }
+    ]
   }
 }

@@ -8,14 +8,7 @@
       "title": {
         "type": "Text",
         "config": {
-          "label": "Title",
-          "placeholder": ""
-        }
-      },
-      "description": {
-        "type": "Text",
-        "config": {
-          "label": "Description",
+          "label": "Biscuit Title",
           "placeholder": ""
         }
       },
@@ -29,16 +22,25 @@
       "color": {
         "type": "Color",
         "config": {
-          "label": "Color",
+          "label": "Biscuit Color",
           "placeholder": ""
         }
       },
       "img": {
         "type": "Image",
         "config": {
-          "label": "Img",
+          "label": "Biscuit Img",
           "constraint": {},
           "thumbnails": []
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Biscuit description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       }
     }

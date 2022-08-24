@@ -1,19 +1,33 @@
 {
-  "id": "c753d83e-982f-40b4-9e71-40c0ffb92300",
-  "uid": "recusandae-ipsa-dolor",
+  "id": "mock-doc-id",
+  "url": null,
   "type": "my-biscuit",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
   "data": {
-    "title": "grow out-of-the-box relationships",
-    "description": "unleash e-business action-items",
-    "color": "#32f94e",
+    "title": "spite",
+    "color": "#081451",
     "img": {
       "dimensions": {
         "width": 900,
         "height": 500
       },
-      "alt": "Placeholder image",
+      "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
-    }
+      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Mollit ut sit ipsum proident minim occaecat eu eu nostrud sunt nisi veniam. Aute nisi culpa nulla magna aute voluptate culpa voluptate qui eu labore irure dolor ipsum. Duis commodo eiusmod officia anim est nisi proident.",
+        "spans": []
+      }
+    ]
   }
 }

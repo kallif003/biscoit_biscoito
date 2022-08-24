@@ -10,7 +10,14 @@
         }
       }
     },
-    "my-art": {},
+    "my-art": {
+      "description": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    },
     "my-biscuit": {},
     "my-info": {},
     "my-praises": {
